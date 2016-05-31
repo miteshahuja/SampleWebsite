@@ -1,0 +1,32 @@
+<!DOCTYPE>
+<html lang="en">
+<head>
+	<title>Mitesh Sample App</title>
+	<link rel="stylesheet" type="text/css" href="style/feature.css">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
+</head>
+<body ng-app="sampleApp">
+	<!-- Main Wrapper starts-->
+	<div class="container-fluid" ng-controller="sampleCtrl as ctrl">
+		<header class="row text-center"><h1>LoGo of App</h1></header>
+		<section class="row content-area">
+			<input type="text" ng-model="ctrl.username">
+			<input type="password" ng-model="ctrl.password">
+			<button ng-click="ctrl.change()">Change Values</button>
+			<button ng-click="ctrl.submit()">Submit</button>
+		    <br/><br/>
+		  </div>
+
+
+		</section>
+		
+		<footer class="row text-right text-success"><h5> 2016 COPYRIGHT Mitesh Ahuja </h5> </footer>
+  	</div> 
+  	<!-- Main Wrapper ends-->
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.11/angular.js"></script>
+	<script type="text/javascript" src="sampleCtrl.js">	</script>
+</body>
+</html>
